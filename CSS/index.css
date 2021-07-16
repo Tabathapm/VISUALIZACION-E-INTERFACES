@@ -1,0 +1,19 @@
+.portadas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio{
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -0.32px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.1);
+}

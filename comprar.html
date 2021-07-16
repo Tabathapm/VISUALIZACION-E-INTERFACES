@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+    
+    <link rel="stylesheet" href="CSS/general.css">  
+    
+    <title>Juego PS4 Mortal Kombat 11</title>
+    <link rel="icon" href="Imagenes/frávega-squarelogo.png">
+</head>
+<body>
+
+    <div class="w3-container">
+        <header>
+            <div class="w3-row">
+                <div class="w3-third w3-container w3-center">
+                    <a href="index.html"><img src="Imagenes/logo-fravega.png" width="200" alt=""></a>
+                </div>
+                <div class="w3-third w3-container">
+                    <div class="barradebusqueda">
+                        <input type="search"  placeholder="Buscar productos">
+                        <button type="submit">BUSCAR</button>
+                    </div>
+                </div>
+                <div class="w3-third w3-container carrito">
+                    <img src="Imagenes/human-icon-png-1901.png" width="35" class="w3-hover-opacity" style="margin-right: 22px;" 
+                    onclick="document.getElementById('id01').style.display='block'" 
+                        class="w3-button" alt="">
+                    <img src="Imagenes/carrito.png" width="30" class="w3-hover-opacity">
+                </div>
+              </div>
+        </header>
+    </div>
+    
+    <!----------------------------------------------------------------------------------------->
+    <!---------------------------------- NavBar ----------------------------------------------->
+    
+    <div class="w3-bar w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Tv, Audio y Video</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Tecnología</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Electrodomésticos</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Hogar</a>   
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Fitness</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:13.66%">Bebés y Niños</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button" style="width: 184.66%;">Más categorias</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button" style="width:184.66%">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button" style="width:184.66%">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button" style="width:184.66%">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- MODAL ----------------------------->
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="width: 23%;">
+            <header class="w3-container w3-deep-purple"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                <h5>Elija una de las opciones para confirmar su identidad</h5>
+            </header>
+            <div class="w3-container">
+                <p>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <button class="w3-btn w3-safety-blue w3-hover-shadow w3-round-large w3-block">
+                            Ingresar con Facebook
+                        </button>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://accounts.google.com/signin/oauth/oauthchooseaccount?redirect_uri=https%3A%2F%2Fvtexid.vtex.com.br%2FVtexIdAuthSiteKnockout%2FReceiveAuthorizationCode.ashx&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=offline&response_type=code&client_id=824106868140-qbvtgtkcbprv9q7veui8jteqcc25p69m.apps.googleusercontent.com&state=1edad265-8adb-4e5a-bb43-9d159e5a1acd&o2v=1&as=u8o5dSvE2qMAGTVTTMddgg&flowName=GeneralOAuthFlow" target="_blank">
+                        <button class="w3-btn w3-safety-orange w3-hover-shadow w3-round-large w3-block">
+                            Ingresar con Google
+                        </button>
+                    </a>
+                </p>
+                <p>    
+                    <button class="w3-btn w3-grey w3-hover-shadow w3-round-large w3-block"
+                        onclick="document.getElementById('id02').style.display='block'" 
+                        class="w3-button">
+                            Ingresar con mail y contraseña
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-right w3-card-4" style="width: 23%;">
+            <header class="w3-container w3-deep-purple"> 
+                <span onclick="document.getElementById('id02').style.display='none';
+                           document.getElementById('id01').style.display='none'" 
+                            class="w3-button w3-display-topright">&times;</span>
+                <h5>Ingrese con mail y contraseña</h5>
+            </header>
+            <div class="w3-container">
+                <form class="w3-container">
+                    <p>      
+                    <label class="w3-text-black"><b>Email</b></label>
+                    <input class="w3-input w3-border w3-round-large" type="email"></p>
+                    <p>      
+                    <label class="w3-text-black"><b>Contraseña</b></label>
+                    <input class="w3-input w3-border w3-round-large" type="password"></p>
+                    <p>
+                    <button class="w3-btn w3-deep-purple w3-hover-shadow w3-round-large w3-block">Register</button></p>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- FORMULARIO DE COMPRA ----------------------------------------------->
+    <br>
+
+    <div class="w3-container w3-text-deep-purple">
+        <h2><strong>Finalizá tu compra</strong></h2>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+            <form>             
+                
+                <p><label>Nombre y Apellido</label>
+                <input class="w3-input w3-border" type="text"></p>
+              
+                <p><label>Calle y número</label>
+                <input class="w3-input w3-border" type="text"></p>
+
+                <p><label>Piso</label>
+                <input class="w3-input w3-border" type="number"></p>
+              
+                <p><label>Departamento</label>
+                <input class="w3-input w3-border" type="text"></p>
+
+                <p><label>Código Postal</label>
+                <input class="w3-input w3-border" type="number"></p>
+
+              </form>
+        </div>
+        <div class="w3-third w3-container">
+            <form class="w3-container">
+
+                <p><label>Ciudad</label>
+                <input class="w3-input w3-border" type="text"></p>
+            
+                <p><label>Estado/Provincia</label>
+                <input class="w3-input w3-border" type="text"></p>
+                      
+                <p><label>País</label>
+                <input class="w3-input w3-border" type="text"></p>
+        
+                <p><label>Teléfono Móvil</label>
+                <input class="w3-input w3-border" type="number"></p>
+                
+                <p style="margin-top: 10%;">
+                    <a href="comprar.html">
+                        <button class="w3-button w3-deep-purple w3-round w3-block">
+                            CONTINUAR
+                        </button>
+                    </a>
+                </p>
+                
+            </form>
+        </div>
+        <div class="w3-card-4 w3-third" style="margin-left: -1%;">
+            <div class="w3-container w3-text-deep-purple">
+                <h4><strong>Resumen de compra</strong></h4>
+                <hr class="rounded w3-border-grey" style="margin-left: -12px;">
+            </div>
+        
+            <div class="w3-margin">
+                <div>
+                    <div class="w3-row">
+                        <div class="w3-half ">
+                            <img src="Producto/portada.jpg" style="width: 58%; margin-top: -12%;">
+                        </div>
+                        <div class="w3-container w3-half" style="margin: -36% 0% 0% 29%; width: 59%;">
+                            <p>Juego PS4 Warner Bros Games Mortal Kombat 11</p>
+                            <p class="w3-text-deep-purple"><strong>$5.199 &nbsp &nbsp 1</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="rounded w3-border-grey" style="margin-left: -12px;">                
+            </div>
+
+            <div class="w3-text-deep-purple w3-margin w3-center">
+                <p><h6>Total: $5.199</h6></p>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------->
+    <!------------------------ FOOTER --------------------------------------->
+    <!----------------------------------------------------------------------->
+    <br>
+
+    <div class="w3-container" style="border-top: groove;">
+        <footer>
+            <div class="w3-row w3-margin">
+                <div class="w3-center w3-container w3-quarter">
+                    <a href="index.html"><img src="Imagenes/logo-fravega.png" width="200" alt=""></a>
+                    <div style="margin-left: -69px;">
+                        <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/facebook.png" width="25" alt=""></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/instagam.png" width="25" alt=""></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="Imagenes/twitter.png" width="25" alt=""></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="Imagenes/in.png" width="25" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-quarter foo">
+                    <span>
+                        Venta telefónica: <br>
+                        <strong>0810 333 8700</strong> <br>
+                        LU-VI de 8:00 a 20:00 <br>
+                        SA-DO-Feriados 9:00 a 21:00
+                    </span>
+                </div>
+
+                <div class="w3-container w3-quarter foo">
+                    <span>
+                        Atención al cliente: <br>
+                        <strong>0810 999 3728</strong> <br> 
+                        LU-VI de 10:00 a 16:00
+                    </span>
+                </div>
+                <div class="w3-container w3-quarter foo">
+                    <span>
+                        Cobranza de créditos: <br>
+                        <strong>0810 222 8368</strong> <br>
+                        LU-VI de 08:00 a 19:45
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

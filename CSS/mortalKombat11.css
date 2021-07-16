@@ -1,0 +1,11 @@
+.bordes{
+    border: 1px solid #9e9e9e;
+}
+
+.contenedor{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-left: 11px;
+    background-color: lightgray;
+}
